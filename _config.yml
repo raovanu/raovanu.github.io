@@ -1,9 +1,9 @@
 # site settings
 title: Vanu Rao
-subtitle: by HTML5 UP
+subtitle: A personal portfolio
 email: raovanu@uw.edu
 description: A personal portfolio.
-baseurl: "/portfolio" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://raovanu.github.io" # the base hostname & protocol for your site
 author:
 
