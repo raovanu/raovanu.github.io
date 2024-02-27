@@ -28,7 +28,6 @@
 					width: 10px;
 					height: 10px;
 					border-radius: 5px;
-					border: none;
 					background-color: black;
 					box-sizing: border-box;
 					--min-hotspot-opacity: 0;
@@ -38,11 +37,11 @@
 					background-color: black;
 					position: absolute;
 					transform: translate(10px, 10px);
-					width: 200px;
-					height: 200px;
-					text-wrap: balance;
+					width: fit-content;
+					height: fit-content;
 					border-radius: 5px;
 					padding: 10px;
+					opacity: 80%;
 				}
 			</style>
 			<model-viewer camera-controls src="{{ site.baseurl }}/{{ page.model }}" environment-image="{{ site.baseurl }}/assets/models/hdri.hdr" style="width: 100%; height: 75%;">{{ page.annotations }}</model-viewer>
