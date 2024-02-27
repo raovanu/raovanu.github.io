@@ -1,3 +1,4 @@
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.4.0/model-viewer.min.js"></script>
 <!DOCTYPE html>
 <!--
 	Forty by HTML5 UP
@@ -25,8 +26,12 @@
 					<h1>{{ page.title }}</h1>
 				</header>
 				{% if page.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ page.image }}" alt="" /></span>{% endif %}
+				{% if page.model %}<model-viewer src="{{ site.baseurl }}/{{ page.model }}" environment-image="assets/models/hdri.hdr"/>{% endif %}
+				<script>
+					document.querySelector("model-viewer").model.materials.pbrMetallicRoughness.setBaseColorFactor([0.5,0.5,0.5,1])
+				</script>
 			</div>
-			<div class="column" style="width: 70%; padding-top: 25px;">
+			<div class="column" style="width: 70%; padding-top: 15px;">
 				{{content}}
 			</div>
 		</div>
