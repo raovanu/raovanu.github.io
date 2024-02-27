@@ -23,7 +23,7 @@
 		{% if page.model %}
 		<model-viewer class="model" camera-controls src="{{ site.baseurl }}/{{ page.model }}" environment-image="{{ site.baseurl }}/assets/models/hdri.hdr"/>
 		<script>
-			document.querySelector(".model").model.materials.pbrMetallicRoughness.setBaseColorFactor([0.5,0.5,0.5,1]);
+			Document.querySelector(".model").model.materials.pbrMetallicRoughness.setBaseColorFactor([0.5,0.5,0.5,1]);
 		</script>
 		{% endif %}
 		
