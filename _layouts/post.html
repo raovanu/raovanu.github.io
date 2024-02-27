@@ -20,12 +20,13 @@
 <!-- One -->
 <section id="one">
 	<div class="inner">
-		{% if page.model %}
-		<model-viewer class="model" camera-controls src="{{ site.baseurl }}/{{ page.model }}" environment-image="{{ site.baseurl }}/assets/models/hdri.hdr"/>
-		<script>
-			Document.querySelector(".model").model.materials.pbrMetallicRoughness.setBaseColorFactor([0.5,0.5,0.5,1]);
-		</script>
-		{% endif %}
+		<div class="row">{% if page.model %}
+			<model-viewer class="model" camera-controls src="{{ site.baseurl }}/{{ page.model }}" environment-image="{{ site.baseurl }}/assets/models/hdri.hdr" style="width: 100%;"/>
+			<script>
+				document.querySelector(".model").model.materials.pbrMetallicRoughness.setBaseColorFactor([0.5,0.5,0.5,1]);
+			</script>
+			{% endif %}
+		</div>
 		
 		<div class="row">
 			<div class="column" style="width: 30%;">
