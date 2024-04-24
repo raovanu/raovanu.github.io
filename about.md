@@ -9,6 +9,8 @@ nav-menu: true
 <div id="main" class="alt">
 
 <!-- One -->
+<img src="{{ site.url | absolute_path}}/assets/images/uwfm background.png"/>
+
 <section id="one">
 	<div class="inner">
 		<header class="major">
